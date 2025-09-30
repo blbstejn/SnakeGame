@@ -14,6 +14,47 @@ public class Game
 
     public Game(int width, int height, Random? rng = null)
     {
-        // Set up once food and snake are finalized
+        Board = new Board(width, height);
+        Position start = new Position(width / 2, height / 2);
+        Snake = new Snake(start);
+        this.rng = rng ?? new Random();
+        Food = new Food(this.rng);
+        Food.Respawn(Board, Snake.Body);
+        Score = 0;
+        IsGameOver = false;
+    }
+
+    public void Update(Direction? input = null)
+    {
+        if (IsGameOver)
+            return;
+        
+        if(input.HasValue)
+            Snake.ChangeDirection(input.Value);
+
+        Position next = Snake.PeekNextHead();
+        
+        // wall collision
+        if (!Board.IsInside(next))
+        {
+            IsGameOver = true;
+            return;
+        }
+        
+        // collision with self
+        if (Snake.Body.Skip(1).Contains(next))
+        {
+            IsGameOver = true;
+            return;
+        }
+
+        bool snakeGrowth = next.Equals(Food.Position);
+        Snake.Move(grow: snakeGrowth);
+
+        if (snakeGrowth)
+        {
+            Score++;
+            Food.Respawn(Board, Snake.Body);
+        }
     }
 }
