@@ -6,7 +6,36 @@ class Program
 {
     static void Main()
     {
+        Console.CursorVisible = false;
+
+        const int width = 40;
+        const int height = 20;
         
+        Game game = new Game(width, height);
+
+        const int tickMs = 150;
+
+        while (!game.IsGameOver)
+        {
+            // handle input
+            if (Console.KeyAvailable)
+            {
+                ConsoleKey key = Console.ReadKey(true).Key;
+                Direction? dir = KeyToDirection(key);
+
+                if (dir.HasValue)
+                    game.Update(dir.Value);
+                else
+                    game.Update();
+            }
+            else
+            {
+                game.Update();
+            }
+            
+            Render(game);
+            Thread.Sleep(tickMs);
+        }
     }
 
     static void Render(Game game)
@@ -54,6 +83,8 @@ class Program
                 return Direction.Left;
             case ConsoleKey.RightArrow:
                 return Direction.Right;
+            default:
+                return null;
         }
     }
 }
