@@ -1,96 +1,96 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.4">
   <diagram name="Seite-1" id="Xmixhs5TtLOZDrX23zL7">
-    <mxGraphModel dx="663" dy="1120" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1426" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-1" value="Class diagram" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="40" y="40" width="320" height="40" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-1" value="Class diagram&lt;div&gt;SnakeGame&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="260" y="40" width="320" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-2" value="class Game" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="120" width="280" height="40" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-2" value="class Game" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="150" width="280" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-3" value="- Board Board&lt;div&gt;- Snake Snake&lt;/div&gt;&lt;div&gt;- Food Food&lt;/div&gt;&lt;div&gt;- int Score&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="280" y="160" width="280" height="80" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-3" value="- Board Board&lt;div&gt;- Snake Snake&lt;/div&gt;&lt;div&gt;- Food Food&lt;/div&gt;&lt;div&gt;- int Score&lt;/div&gt;&lt;div&gt;- bool IsGameOver&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="280" y="190" width="280" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Bmr0XWKKT_xRf-sTaCQu-4" target="Bmr0XWKKT_xRf-sTaCQu-11">
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Bmr0XWKKT_xRf-sTaCQu-4" target="Bmr0XWKKT_xRf-sTaCQu-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Bmr0XWKKT_xRf-sTaCQu-4" target="Bmr0XWKKT_xRf-sTaCQu-5">
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Bmr0XWKKT_xRf-sTaCQu-4" target="Bmr0XWKKT_xRf-sTaCQu-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Bmr0XWKKT_xRf-sTaCQu-4" target="Bmr0XWKKT_xRf-sTaCQu-8">
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Bmr0XWKKT_xRf-sTaCQu-4" target="Bmr0XWKKT_xRf-sTaCQu-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-4" value="+ Update(Direction? input)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="280" y="240" width="280" height="40" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-4" value="+ Update(Direction? input)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="280" y="270" width="280" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-5" value="class Board" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-5" value="class Board" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="40" y="360" width="280" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-6" value="- int Width&lt;div&gt;- int Height&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="40" y="400" width="280" height="80" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-6" value="- int Width&lt;div&gt;- int Height&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="40" y="400" width="280" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Bmr0XWKKT_xRf-sTaCQu-7" target="Bmr0XWKKT_xRf-sTaCQu-18">
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Bmr0XWKKT_xRf-sTaCQu-7" target="Bmr0XWKKT_xRf-sTaCQu-18" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="180" y="800" />
-              <mxPoint x="420" y="800" />
+              <mxPoint x="180" y="780" />
+              <mxPoint x="420" y="780" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-7" value="+ IsInside(Position p)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="40" y="480" width="280" height="40" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-7" value="+ IsInside(Position p)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="40" y="460" width="280" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-8" value="class Food" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-8" value="class Food" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="360" width="280" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-9" value="- Position Position" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="520" y="400" width="280" height="80" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-9" value="- Position Position" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="520" y="400" width="280" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Bmr0XWKKT_xRf-sTaCQu-10" target="Bmr0XWKKT_xRf-sTaCQu-18">
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Bmr0XWKKT_xRf-sTaCQu-10" target="Bmr0XWKKT_xRf-sTaCQu-18" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="660" y="800" />
-              <mxPoint x="420" y="800" />
+              <mxPoint x="660" y="780" />
+              <mxPoint x="420" y="780" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-10" value="+ Respawn(Board, IEnumerable&amp;lt;Position&amp;gt;)&lt;div&gt;+ SetPosition(Position p)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="520" y="480" width="280" height="40" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-10" value="+ Respawn(Board, IEnumerable&amp;lt;Position&amp;gt;)&lt;div&gt;+ SetPosition(Position p)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="520" y="460" width="280" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-11" value="class Snake" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="545" width="280" height="40" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-11" value="class Snake" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="520" width="280" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-12" value="- LinkedList&amp;lt;Position&amp;gt; body&lt;div&gt;- Direction Direction&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="280" y="585" width="280" height="80" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-12" value="- LinkedList&amp;lt;Position&amp;gt; body&lt;div&gt;- Direction Direction&lt;/div&gt;&lt;div&gt;- IEnumerable&amp;lt;Position&amp;gt; Body&lt;/div&gt;&lt;div&gt;- Poition Head&lt;/div&gt;&lt;div&gt;- int Length&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="280" y="560" width="280" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-13" value="+ Move(bool grow)&lt;div&gt;+ ChangeDirection(Direction new Dir)&lt;/div&gt;&lt;div&gt;+ IsCollidingWithSelf()&lt;/div&gt;&lt;div&gt;+ PeekNextHead(Direction? dir)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="280" y="665" width="280" height="70" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-13" value="&lt;div&gt;+ PeekNextHead(Direction? newDirectoin)&lt;/div&gt;&lt;div&gt;+ ChangeDirection(Direction newDirection)&lt;/div&gt;&lt;div&gt;+ IsOppositeInput(Direction newDirection)&lt;/div&gt;&lt;div&gt;+ Move(bool grow)&lt;/div&gt;&lt;div&gt;+ IsCollidingWithSelf()&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="280" y="640" width="280" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Bmr0XWKKT_xRf-sTaCQu-17" target="Bmr0XWKKT_xRf-sTaCQu-18">
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Bmr0XWKKT_xRf-sTaCQu-17" target="Bmr0XWKKT_xRf-sTaCQu-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-17" value="+ Head : Position&lt;div&gt;+ Length : int&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="280" y="735" width="280" height="40" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-17" value="+ Head : Position&lt;div&gt;+ Length : int&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="280" y="730" width="280" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-18" value="class Position" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="820" width="280" height="40" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-18" value="class Position" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="800" width="280" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-19" value="+ int X&lt;div&gt;+ int Y&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="280" y="860" width="280" height="80" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-19" value="+ int X&lt;div&gt;+ int Y&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="280" y="840" width="280" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Bmr0XWKKT_xRf-sTaCQu-20" target="Bmr0XWKKT_xRf-sTaCQu-24">
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Bmr0XWKKT_xRf-sTaCQu-20" target="Bmr0XWKKT_xRf-sTaCQu-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-20" value="+ Next(Direction dir)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="280" y="940" width="280" height="40" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-20" value="+ Next(Direction direction)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="280" y="900" width="280" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-24" value="enum Direction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="1000" width="280" height="40" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-24" value="enum Direction" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="980" width="280" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-25" value="Up&lt;div&gt;Down&lt;/div&gt;&lt;div&gt;Left&lt;/div&gt;&lt;div&gt;Right&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="280" y="1040" width="280" height="80" as="geometry" />
+        <mxCell id="Bmr0XWKKT_xRf-sTaCQu-25" value="Up&lt;div&gt;Down&lt;/div&gt;&lt;div&gt;Left&lt;/div&gt;&lt;div&gt;Right&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="280" y="1020" width="280" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
