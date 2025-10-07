@@ -36,8 +36,11 @@ public class Snake
                (this.Direction == Direction.Down && newDirection == Direction.Up);
     }
 
+    public Position? PreviousTail { get; private set; }
+    
     public Position Move(bool grow = false)
     {
+        PreviousTail = Body.Last();
         Position head = body.First!.Value;
         Position newHead = head.Next(Direction);
 

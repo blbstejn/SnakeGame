@@ -16,6 +16,16 @@ class Program
         Game game = new Game(width, height);
 
         const int tickMs = 150;
+        Position? previousTail = null;
+        
+        // setup playing board
+        for (int y = 0; y < game.Board.Height; y++)
+        {
+            for (int x = 0; x < game.Board.Width; x++)
+            {
+                DrawCharacterAtPosition(new Position(x, y), '.');
+            }
+        }
 
         while (!game.IsGameOver)
         {
@@ -35,42 +45,43 @@ class Program
                 game.Update();
             }
             
-            Render(game);
+            Render(game, ref previousTail);
             Thread.Sleep(tickMs);
         }
     }
 
-    static void Render(Game game)
+    static void Render(Game game, ref Position? previousTail)
     {
-        // pretty simple renderer setup: clear and draw everything
-        Console.Clear();
-
-        for (int y = 0; y < game.Board.Height; y++)
-        {
-            for (int x = 0; x < game.Board.Width; x++)
-            {
-                Console.SetCursorPosition(x, y);
-                Console.Write('.');
-            }
-        }
+        // replace position of tail from previous rendercall with emptiness
+        if (previousTail.HasValue)
+            DrawCharacterAtPosition(previousTail.Value, '.');
         
         // food
-        var foodPos = game.Food.Position;
-        Console.SetCursorPosition(foodPos.X, foodPos.Y);
-        Console.Write('*');
+        DrawCharacterAtPosition(game.Food.Position, '*');
         
-        // snake
+        //snake
         bool first = true;
-        foreach (var seg in game.Snake.Body)
+        foreach (Position segment in game.Snake.Body)
         {
-            Console.SetCursorPosition(seg.X, seg.Y);
-            Console.Write(first ? '0' : 'o');
+            char segmentChar = first ? 'O' : 'o';
+            DrawCharacterAtPosition(segment, segmentChar);
             first = false;
         }
         
         // portray score
         Console.SetCursorPosition(0, game.Board.Height);
         Console.Write($"Score: {game.Score}");
+
+        previousTail = game.Snake.PreviousTail;
+    }
+
+    static void DrawCharacterAtPosition(Position position, char character)
+    {
+        if (position.X >= 0 && position.Y >= 0)
+        {
+            Console.SetCursorPosition(position.X, position.Y);
+            Console.Write(character);
+        }
     }
 
     static Direction? KeyToDirection(ConsoleKey key)
