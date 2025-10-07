@@ -15,7 +15,9 @@ Snake runs in a console.
 
 ### Project structure
 - *SnakeGame* (Class library) -> Game logic (Board, Snake, Food, Game)
-- *SnakeGame.Console* (Console and visuals) -> rendering and input handling
+- *SnakeGame.Console* (Console and visuals) -> Rendering and input handling
+- *SnakeGame.Tests* (MSTest) -> Unit testing
+- *docs* -> class diagram and possibly other important documents
 
 ### Class diagram
 (see docs/SnakeGameClassDiagram)
