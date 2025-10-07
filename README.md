@@ -39,5 +39,9 @@ Snake runs in a console.
 - *MVC-light*: classes and logic clearly separated from console UI
 
 ## Tests
+**Set up two test classes for the snake and food and snake separately**
+- *Tests for Snake*
+
+- *Tests for Food and Game*
 
 ## Setup and run
