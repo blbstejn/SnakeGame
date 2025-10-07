@@ -29,7 +29,7 @@ Snake runs in a console.
 	- Variables and fields: *camelCase*
 	- Constants (not used, but for completion's sake): *UPPER_CASE*
 - *GitHub commit prefixes*
-	- Implemented feature: *feat*
+	- Implemented feature or fixes: *feat*
 	- Changes to documentation: *docs*
 	- Implemented tests: *test*
 
@@ -41,7 +41,8 @@ Snake runs in a console.
 ## Tests
 **Set up two test classes for the snake and food and snake separately**
 - *Tests for Snake*
-
+	- *MovingUpdatesSpawnPosition*: check whether the move function causes changes in position
+	- *DirectionChangePreventsReverse*: Receiving the opposite input of the snake's current direction is being ignored
 - *Tests for Food and Game*
-
+	- *NoFoodRespawnOnSnake*: food does not respawn on top of the snake's body
 ## Setup and run
