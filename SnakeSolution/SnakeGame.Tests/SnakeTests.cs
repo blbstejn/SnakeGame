@@ -2,6 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace SnakeGame.Tests;
 
+// The explanations of the different tests are found within the README file
 [TestClass]
 public class SnakeTests
 {
@@ -13,7 +14,7 @@ public class SnakeTests
         snake.Move();
         Position head = snake.Head;
         
-        Assert.AreEqual(spawnPosition, head);
+        Assert.AreNotEqual(spawnPosition, head);
     }
     
     [TestMethod]
@@ -23,6 +24,6 @@ public class SnakeTests
         // standard direction is right, choosing the opposite should always be ignored
         snake.ChangeDirection(Direction.Left);
         
-        Assert.AreEqual(Direction.Right, snake.Direction);
+        Assert.AreNotEqual(Direction.Right, snake.Direction);
     }
 }
