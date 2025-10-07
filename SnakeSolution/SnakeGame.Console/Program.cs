@@ -11,6 +11,8 @@ class Program
         const int width = 40;
         const int height = 20;
         
+        Console.SetWindowSize(width + 2, height + 2);
+        
         Game game = new Game(width, height);
 
         const int tickMs = 150;
