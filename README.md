@@ -47,4 +47,7 @@ Snake runs in a console.
 	- *DirectionChangePreventsReverse*: Receiving the opposite input of the snake's current direction is being ignored
 - *Tests for Food and Game*
 	- *NoFoodRespawnOnSnake*: food does not respawn on top of the snake's body
+	- *EatingFoodIncrementsScoreAndGrowsSnake*: Check whether the score begins at 0; Make sure eating food both increments score and grows the snake
 ## Setup and run
+- Run program in separate console
+- Do not move mouse cursor by mouse as this breaks the program
